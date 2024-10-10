@@ -12,9 +12,9 @@ function getWeatherData() {
   // Define the API URL
   const apiUrl =
     "https://api.open-meteo.com/v1/forecast?latitude=" +
-    lat +
+    lat.trim() +
     "&longitude=" +
-    long +
+    long.trim() +
     "&current=temperature_2m,rain&timezone=auto&forecast_days=1";
 
   // Make a GET request
