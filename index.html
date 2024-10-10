@@ -3,8 +3,58 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width,initial-scale=1.0" />
-    <link rel="stylesheet" href="style.css  " />
+    <link rel="stylesheet" href="style.css" />
     <title>weather app</title>
   </head>
-  <body></body>
+  <body>
+    <div class="main">
+      <div class="loader">
+        <div class="spinner">
+          <div class="bar1"></div>
+          <div class="bar2"></div>
+          <div class="bar3"></div>
+          <div class="bar4"></div>
+          <div class="bar5"></div>
+          <div class="bar6"></div>
+          <div class="bar7"></div>
+          <div class="bar8"></div>
+          <div class="bar9"></div>
+          <div class="bar10"></div>
+          <div class="bar11"></div>
+          <div class="bar12"></div>
+        </div>
+      </div>
+
+      <h1 style="font-size: 20px; color: aliceblue; padding-top: 2rem">
+        Weather
+      </h1>
+
+      <div class="searchbox">
+        <div>
+          <input type="text" id="latitude" placeholder="latitude" />
+
+          <input type="text" id="longitude" placeholder="longitude" />
+        </div>
+        <div>
+          <button class="searchbutton" onclick="getWeatherData()">
+            <img src="search.png" class="searchicon" />
+          </button>
+        </div>
+      </div>
+
+      <div class="info">
+        <div class="data">
+          <span id="temp"></span>
+          <p>Temperature</p>
+        </div>
+
+        <div class="data">
+          <span id="rain"></span>
+          <p>Rain</p>
+        </div>
+      </div>
+    </div>
+
+    <script src="./main.js"></script>
+  </body>
 </html>
